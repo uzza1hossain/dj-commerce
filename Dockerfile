@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
   # psycopg2 dependencies
   libpq-dev \
   gettext
-  
+
 ARG SECRET_KEY ${SECRET_KEY}
 ARG DATABASE_URL ${DATABASE_URL}
 RUN mkdir -p /usr/src/app

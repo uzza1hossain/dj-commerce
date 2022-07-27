@@ -7,8 +7,8 @@ assignees: ''
 
 ---
 
-As a **User/Developer/Employee**, I can **Task they can complete**, so that **Benefit they receive**
+As a **User/Developer/Employee**, I would like **Task they can complete**, so that **Benefit they receive**
 
 ### Tasks
 
-- [ ]
+- [ ] Task 1 -
