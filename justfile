@@ -22,9 +22,6 @@ set dotenv-load := true
 
 # Commit using commitizen
 @commit: pre-commit
-    pip-compile
-    pip-compile requirements-dev.in
-    pre-commit run --all-files
     cz -n cz_commitizen_emoji c
 
 # opens a console
@@ -41,6 +38,8 @@ set dotenv-load := true
 
 # run pre-commit to all file
 @pre-commit:
+    pip-compile
+    pip-compile requirements-dev.in
     pre-commit run --all-files
 
 # starts app
