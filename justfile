@@ -18,7 +18,8 @@ set dotenv-load := true
     just --check --fmt --unstable
 
 # Commit using commitizen
-@commit:
+@commit: pre-commit
+    pre-commit run --all-files
     cz -n cz_commitizen_emoji c
 
 # opens a console
@@ -26,10 +27,16 @@ set dotenv-load := true
     echo "TODO: console"
 
 # deploy to the caprover
+@deploy:
+    caprover deploy -h $DEPLOY_HOST -p $DEPLOY_PASS -b $DEPLOY_BRANCH -a $DEPLOY_APP
 
 # format and overwrite justfile
 @fmt:
     just --fmt --unstable
+
+# run pre-commit to all file
+@pre-commit:
+    pre-commit run --all-files
 
 # starts app
 @server:
