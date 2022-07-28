@@ -4,6 +4,8 @@
 ### Own ###
 requirements-dev.in
 requirements-dev.txt
+staticfiles
+Dockerfile.bak
 
 ### Django ###
 *.log
@@ -24,6 +26,7 @@ media
 # Byte-compiled / optimized / DLL files
 *.py[cod]
 *$py.class
+
 
 # C extensions
 *.so

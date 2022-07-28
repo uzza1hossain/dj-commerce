@@ -13,6 +13,5 @@ WORKDIR /usr/src/app
 COPY . ./
 RUN pip install pip --upgrade
 RUN pip install -r requirements.txt
-COPY ./utils/ /usr/src/utils
 EXPOSE 80
-CMD sh /usr/src/utils/run.sh
+CMD sh /usr/src/app/utils/run.sh

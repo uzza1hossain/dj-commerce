@@ -25,6 +25,8 @@ set dotenv-load := true
 @console:
     echo "TODO: console"
 
+# deploy to the caprover
+
 # format and overwrite justfile
 @fmt:
     just --fmt --unstable
