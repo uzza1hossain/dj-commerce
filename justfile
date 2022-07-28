@@ -22,6 +22,8 @@ set dotenv-load := true
 
 # Commit using commitizen
 @commit: pre-commit
+    pip-compile
+    pip-compile requirements-dev.in
     pre-commit run --all-files
     cz -n cz_commitizen_emoji c
 
