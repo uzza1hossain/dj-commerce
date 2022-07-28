@@ -3,6 +3,15 @@ from django.db import models
 
 
 class CustomUser(AbstractUser):
+    """Default User model
+
+    Args:
+        AbstractUser (_type_): _description_
+
+    Returns:
+        _type_: _description_
+    """
+
     pass
     # add additional fields in here
 

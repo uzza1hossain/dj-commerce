@@ -7,7 +7,10 @@ set dotenv-load := true
 
 # installs/updates all dependencies
 @bootstrap:
-    echo "TODO: bootstrap"
+    pip-compile
+    pip-compile requirements-dev.in
+    pip-sync requirements-dev.txt requirements.txt
+
 
 # invoked by continuous integration servers to run tests
 @cibuild:
