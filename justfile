@@ -44,7 +44,7 @@ set dotenv-load := true
 
 # starts app
 @server:
-    ./manage.py runserver
+    DJANGO_SETTINGS_MODULE=core.settings_local ./manage.py runserver
 
 # sets up a project to be used for the first time
 @setup:

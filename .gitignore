@@ -6,6 +6,7 @@ requirements-dev.in
 requirements-dev.txt
 staticfiles
 Dockerfile.bak
+core/settings_local.py
 
 ### Django ###
 *.log
