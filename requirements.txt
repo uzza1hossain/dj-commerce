@@ -30,7 +30,7 @@ gunicorn==20.1.0
     # via -r requirements.in
 idna==3.3
     # via requests
-oauthlib==3.2.0
+oauthlib==3.2.1
     # via requests-oauthlib
 pillow==9.2.0
     # via -r requirements.in
